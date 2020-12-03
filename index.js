@@ -11,8 +11,11 @@ const main = async () => {
     const $ = cheerio.load(content)
 
     const title = $('.content-header > h1').text()
-    const leituras = $('.container-leituras>leituras').text()
+    const menuleituras = $('.container-leituras').text()
+    const leituras = $('.tab-pane').text()
     
+    console.log(title)
+    console.log(menuleituras)
     console.log(leituras)
 }
 
